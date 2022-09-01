@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/*@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'Gemini';
+    src: url('Gemini Moon.otf') format('opentype');
+}*/
+*{
+    
+   /* font-family: 'Shadows Into Light', cursive; */
+}
+
+body {
+    
+    background-image:linear-gradient(to right,#ff70d4,#f7bdcb);
+    background-attachment:fixed;
+}
+
+main {
+    background-color: #faf3f5;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #4c366e88;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    
+    
+}
+
+h1{
+    font-family: 'Gemini';
+    color:#9d71e4;
+    text-align: center;
+    text-shadow: 1px 1px 2px #4c366e;
+}
+
+h2{
+    font-family: 'Gemini';
+    color: #FF9671;
+}
+
+h2:hover{
+   /* background-color:lightcyan;*/
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #4c366e;
+}
+
+p {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: justify;
+}
+
+p.teste{
+    height: auto;
+    width: 300px;
+    background-color: #9d71e4;
+    border-style: solid;
+    border-color:#6111b1;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline-width: 10;
+    outline-style: dashed;
+    outline-color: #ff70d4;
+
+}
+
+p::first-letter{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
