@@ -1819,18 +1819,101 @@ A tag dd é a descrição da tag <br>
     <strong style="color:#2aaf02; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Utilizar CSS Grid</strong> <br>
     - CSS Grid é uma forma esquemática de desenhar páginas de web HTML+CSS utilizando um formato de grelha<br>
     - O CSS Grid utiliza um conceito de grelha estilo tabela para criar o esquema visual de uma página <br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" target="_blank">Conceitos Básicos de Grid Layout</a><br>
+    <br>
     - Podemos utilizar o MS Word para exemplificar este conceito <br>
     
-    <a href="pagina css grid.docx" >Exemplo em Word</a>
+    <a href="pagina css grid.docx" >Exemplo em Word</a> <br>
 
+    <br>
     - Iniciamos por criar os vários containers e items em HTML <br>
+    - Os containers são zonas da página que vão possuir os vários items do conteudo da página <br>
     <pre><code>
-        
+        &lt;main> {
+            &lt;section class="grid1"> {
+                &lt;aside class="cx c1"> Caixa 1 &lt;/aside>
+                &lt;aside class="cx c2"> Caixa 2 &lt;/aside> 
+                &lt;aside class="cx c3"> Caixa 3 &lt;/aside> 
+                &lt;aside class="cx c4"> Caixa 4 &lt;/aside> 
+                &lt;aside class="cx c5> Caixa 5 &lt;/aside> 
+                &lt;aside class="cx c6> Caixa 6 &lt;/aside> 
+                &lt;aside class="cx c7> Caixa 7 &lt;/aside> 
+                &lt;aside class="cx c8"> Caixa 8 &lt;/aside> 
+                &lt;aside class="cx c9"> Caixa 9 &lt;/aside> 
+                &lt;aside class="cx c10"> Caixa 10 &lt;/aside> 
+            }
+            &lt;/section>
+        }
+        &lt;/main>
     </code></pre>
+
+    - Isto vai fazer um container chamado grid1 e vamos colocar items do tipo cx e sub tipo c1...c10 <br>
+    - Estes tipos são dados por classes a os items vão ter duas classes cx e c1 a c10 <br>
+    - Depois de construir-mos o container vamos configurar o container e os items no css <br>
+    - Primeiro teremos de dizer que o grid1 é do tipo grid <br>
+    - Depois vamos ter de dizer qual é a altura do container utilizando a medida "vh" ou "viewport height", sendo 100vh, 100% da altura total da página. <br>
+    - Depois podemos dizer quantas colunas e linhas estão na grelha de items dentro do contentor <br>
+
+    <pre><code>
+        .grid1{
+            display: grid;
+            height:100vh;
+            grid-template-columns: 70px 300px 100px;
+            grid-template-rows: 150px 500px;
+
+        }
+    </code></pre>
+
+    - Com a medida px ou pixels fazem items com tamanhos fixos <br>
+    - Como existem mais items que linhas as restantes linhas vão ter um tamanho igualmente distribuido de acordo com o resto do viewport <br>
+    - Podemos fazer uma página mais responsiva utilizando medidas relativas como % <br>
+
+    <pre><code>
+        .grid1{
+            display: grid;
+            height:100vh;
+            grid-template-columns: 15% 50% 35%;
+            grid-template-rows: 10% 60% 5%;
+
+        }
+    </code></pre>
+    - Novamente existem mais items que linhas os restantes items vão ter o restante da viewport height <br>
+    - Também pode ser utilizado o auto para distribuir tudo automaticamente <br>
+
+    <pre><code>
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+    </code></pre>
+
+    - Além das 2 dimensões os elementos Grid também têm a 3a dimensão utilizando o z-index: <br>
+    - Começamos por diminuir uma das colunas para cortar o conteudo do item <br>
+
+    <pre><code>
+        grid-template-columns: auto 30px auto auto;
+    </code></pre>
+
+    - Depois vamos modificar o z-index de um dos items cortados para vir para a frente <br>
+    <pre><code>
+        z-index: 1;
+    </code></pre>
+
+    - Quanto maior for o z-index mais para a frente será puxado o conteudo de um item. <br>
+
+   
+</p>
+<hr>    
+<hr>
+<h1>
+    Aula 38! - CSS GRID!
+</h1>
+<hr>
+
+<p>
+    <strong style="color:#77a112; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Continuação CSS Grid</strong> <br>
+    - CSS Grid é uma forma esquemática de desenhar páginas de web HTML+CSS utilizando um formato de grelha<br>
+
     
 </p>
-
-
 
 
 
