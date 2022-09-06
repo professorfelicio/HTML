@@ -1189,6 +1189,7 @@ A tag dd é a descrição da tag <br>
     </code></pre>
     
     - Para realizar menus deverá de ser utilizada a divisão nav <br>
+    - Um Menu Horizontal normalmente será assim <br> 
     <pre><code>
         body{
             &lt;header>
@@ -1203,6 +1204,26 @@ A tag dd é a descrição da tag <br>
             &lt;/header>
         }
     </code></pre>
+
+    - Um Menu Vertical normalmente será assim <br>
+    <pre><code>
+        body{
+            &lt;section>
+
+                &lt;nav> 
+                    &lt;ul>
+                        &lt;li> &lt;a href="https://......"> Item Menu 1 &lt;/a> &lt;/li>
+                        &lt;li> &lt;a href="https://......"> Item Menu 2 &lt;/a> &lt;/li>
+                        &lt;li> &lt;a href="https://......"> Item Menu 3 &lt;/a> &lt;/li>
+                        &lt;li> &lt;a href="https://......"> Item Menu 4 &lt;/a> &lt;/li>
+                    
+                    &lt;/ul>
+                &lt;/nav>
+
+            &lt;/section>
+        }
+    </code></pre>
+
 
     - Outras divisões semânticas utilizadas normalmente no main é o section, article e o aside. <br>
     <pre><code>
@@ -1370,7 +1391,7 @@ A tag dd é a descrição da tag <br>
 <hr>    
 <hr>
 <h1>
-    Aula 31! - CSS!!!!!!
+    Aula 31! - CSS!!!!!! PROJECTO!!!!
 </h1>
 <hr>
 
@@ -1422,7 +1443,7 @@ A tag dd é a descrição da tag <br>
 <hr>    
 <hr>
 <h1>
-    Aula 32! - CSS!!!!!!
+    Aula 32! - CSS!!!!!! PROJECTO!!!!
 </h1>
 <hr>
 
@@ -1475,7 +1496,7 @@ A tag dd é a descrição da tag <br>
 <hr>    
 <hr>
 <h1>
-    Aula 33! - CSS!!!!!!
+    Aula 33! - CSS!!!!!! PROJECTO!!!!
 </h1>
 <hr>
 
@@ -1555,7 +1576,7 @@ A tag dd é a descrição da tag <br>
 <hr>    
 <hr>
 <h1>
-    Aula 34! - CSS!!!!!!
+    Aula 34! - CSS!!!!!! PROJECTO!!!!
 </h1>
 <hr>
 
@@ -1631,7 +1652,7 @@ A tag dd é a descrição da tag <br>
 <hr>    
 <hr>
 <h1>
-    Aula 35! - CSS!!!!!!
+    Aula 35! - CSS!!!!!! PROJECTO!!!!
 </h1>
 <hr>
 
@@ -1694,7 +1715,7 @@ A tag dd é a descrição da tag <br>
 <hr>    
 <hr>
 <h1>
-    Aula 36! - CSS!!!!!!
+    Aula 36! - CSS!!!!!! FINAL DO PROJECTO!!!!
 </h1>
 <hr>
 
@@ -1816,7 +1837,7 @@ A tag dd é a descrição da tag <br>
 <hr>
 
 <p>
-    <strong style="color:#2aaf02; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Utilizar CSS Grid</strong> <br>
+    <strong style="color:#2aaf02; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">O que é CSS Grid</strong> <br>
     - CSS Grid é uma forma esquemática de desenhar páginas de web HTML+CSS utilizando um formato de grelha<br>
     - O CSS Grid utiliza um conceito de grelha estilo tabela para criar o esquema visual de uma página <br>
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" target="_blank">Conceitos Básicos de Grid Layout</a><br>
@@ -1848,11 +1869,13 @@ A tag dd é a descrição da tag <br>
     </code></pre>
 
     - Isto vai fazer um container chamado grid1 e vamos colocar items do tipo cx e sub tipo c1...c10 <br>
-    - Estes tipos são dados por classes a os items vão ter duas classes cx e c1 a c10 <br>
+    - Estes tipos são dados por classes a os items vão ter duas classes cx e c1 a c10 <br><br>
+    <strong style="color:#569c3a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;"> Declarar um CSS Grid</strong> <br>
+
     - Depois de construir-mos o container vamos configurar o container e os items no css <br>
     - Primeiro teremos de dizer que o grid1 é do tipo grid <br>
     - Depois vamos ter de dizer qual é a altura do container utilizando a medida "vh" ou "viewport height", sendo 100vh, 100% da altura total da página. <br>
-    - Depois podemos dizer quantas colunas e linhas estão na grelha de items dentro do contentor <br>
+    - Depois podemos dizer quantas colunas e linhas estão na grelha de items dentro do contentor utilizando o grid-template-columns e grid-template-rows assim como o tamanho das mesmas<br>
 
     <pre><code>
         .grid1{
@@ -1885,6 +1908,8 @@ A tag dd é a descrição da tag <br>
             grid-template-rows: auto auto;
     </code></pre>
 
+    <strong style="color:#8ff75f; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;"> Profundidade dos items</strong> <br>
+
     - Além das 2 dimensões os elementos Grid também têm a 3a dimensão utilizando o z-index: <br>
     - Começamos por diminuir uma das colunas para cortar o conteudo do item <br>
 
@@ -1894,12 +1919,25 @@ A tag dd é a descrição da tag <br>
 
     - Depois vamos modificar o z-index de um dos items cortados para vir para a frente <br>
     <pre><code>
-        z-index: 1;
+        .c2{
+            background-color:darkorange;
+            z-index: 1;
+        }
     </code></pre>
 
     - Quanto maior for o z-index mais para a frente será puxado o conteudo de um item. <br>
+    - Podemos colocar itemos por cima de outros e não só conteudo <br>
+    - Modificar o tamanho da caixa 2 ela fica por cima das restantes <br>
 
-   
+    <pre><code>
+        .c2{
+            background-color:darkorange;
+            height: 200px;
+            widht: 200px;
+            z-index: 1;
+        }
+    </code></pre>
+      
 </p>
 <hr>    
 <hr>
@@ -1909,14 +1947,104 @@ A tag dd é a descrição da tag <br>
 <hr>
 
 <p>
-    <strong style="color:#77a112; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Continuação CSS Grid</strong> <br>
-    - CSS Grid é uma forma esquemática de desenhar páginas de web HTML+CSS utilizando um formato de grelha<br>
+    <strong style="color:#a11261; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Modificar local de um elemento</strong> <br>
+    - Continuamos com a organização dos elementos da grid<br>
+    - Podemos escolher em que lugar na grid um elemento irá ficar se o quiser-mos tirar da ordem, utilizando o grid-column e o grid-row <br>
+    - Vamos mudar a caixa 8 para o lugar da caixa 1.
 
+    <pre><code>
+        .cx8 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    </code></pre>
+    - Isto significa que a caixa 8 irá:
+         <ul>
+            <li>Desde a primeira linha da grelha até à segunda linha da grelha na horizontal</li>
+            <li>Desde a primeira linha da grela até à segunda linha da grelha na vertical</li>
+        </ul>
     
+    - Isto também permite modificar o tamanho da caixa na grelha <br>
+    
+    <pre><code>
+        .cx8{
+            grid-column: 1/4;
+            grid-row: 1/3;
+        }
+    </code></pre>
+
+    <strong style="color:#bca5ad; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Utilizar o span</strong> <br>
+
+    - Também podemos utilizar o atributo span na grid-column e na grid-row <br>
+    
+    <pre><code>
+        .c7{
+            background-color:burlywood;
+            grid-column: span 3;
+        }
+    </code></pre>
+    
+    - Isto irá fazer com que a caixa 7 "cubra" 3 colunas <br><br>
+
+    <strong style="color:#877179; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Medida FR</strong> <br>
+
+    - No Grid Layout (e Flexbox) é muito utilizada a medida fr que é uma fração <br>
+    - O tamanho das colunas e das linhas poderão ter a medida em fr <br>
+
+    <pre><code>
+        .grid1 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </code></pre>
+
+    - Isto significa que a grelha irá ter 3 colunas de tamanhos iguais e responsivas. <br>
+    - Coluna 1, 2 e 3 irão cada uma ter uma fração igual da grelha. <br>
+    - Podemos utilizar valores de fr diferentes <br>
+
+    <pre><code>
+        .grid1 {
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+    </code></pre>
+
+    - Isto significa que a Coluna 1 irá ocupar 1 fração da grelha, a Coluna 2 2 frações e a coluna 3 1 fração.
+    - Podemos também utilizar para as linhas
+    <pre><code>
+        .grid1 {
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    </code></pre>
 </p>
 
+<hr>    
+<hr>
+<h1>
+    Aula 39! - CSS GRID!
+</h1>
+<hr>
 
+<p>
+    <strong style="color:#07613f; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Utilização do repeat</strong> <br>
+    - Para facilitar a repetição de elementos em linhas e colunas podemos utilizar o repeat (nº repetições, tamanhos)<br>
 
+    <pre><code>
+        .grid1{
+            grid-template-columns: repeat (3, 1fr);
+        }
+    </code></pre>
+    - Este código irá dar 3 colunas de 1 fr cada. <br>
+    - Podemos alternar tamanhos das colunas utilizando mais que um valor nos tamanhos <br>
+
+    <pre><code>
+        .grid1{
+          
+            display: grid;
+            height:50vh;
+            grid-template-columns: repeat(3,1fr 10px);
+        }
+    </code></pre>
+
+    <strong style="color:#9cb0a4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Gap entre linhas e colunas</strong> <br>
 
 <hr>
 <hr>
