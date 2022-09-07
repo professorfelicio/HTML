@@ -1862,6 +1862,8 @@ A tag dd é a descrição da tag <br>
                 &lt;aside class="cx c8"> Caixa 8 &lt;/aside> 
                 &lt;aside class="cx c9"> Caixa 9 &lt;/aside> 
                 &lt;aside class="cx c10"> Caixa 10 &lt;/aside> 
+                &lt;aside class="cx c10"> Caixa 10 &lt;/aside> 
+                &lt;aside class="cx c11"> Caixa 11 &lt;/aside> 
             }
             &lt;/section>
         }
@@ -2045,7 +2047,23 @@ A tag dd é a descrição da tag <br>
     </code></pre>
 
     <strong style="color:#9cb0a4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Gap entre linhas e colunas</strong> <br>
-
+    - Um Grid Gap é um espaço entre os elementos da grelha <br>
+    - Podemos fazer espaços entre colunas com grid-column-gap: e entre as linhas com grid-row-gap: <br>
+    <pre><code>
+        .grid1{
+          
+            grid-column-gap: 20px;
+            grid-row-gap: 10px
+        }
+    </code></pre>
+    - Também podemos declarar espaços entre colunas e linhas numa só linha com grid-gap: <br>
+    <pre><code>
+        .grid1{
+          
+            grid-gap: 20px 10px;
+            
+        }
+    </code></pre>
 <hr>
 <hr>
 <hr>    
