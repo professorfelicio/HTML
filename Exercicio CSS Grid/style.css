@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body{
+    margin:0px;
+    padding:0px;
+    height:100vh;
+    line-height: 20px;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 75px 4fr 1.5fr;
+    
+    grid-template-areas: 
+    "header header"
+    "pub pub"
+    "cont form"
+    "footer footer";
+    max-width: 800px;
+    height:80vh;
+    margin: auto;
+}
+
+header{
+    
+    grid-area: header;
+    border-style: solid;
+}
+
+.pub {
+    grid-area: pub;
+    background-color: rgb(174, 212, 3);
+    border-style: solid;
+}
+
+.content{
+    grid-area: cont;
+    background-color: dodgerblue;
+    border-style: solid;
+}
+
+
+.form {
+    border-style: solid;
+    grid-area: form;
+    background-color: dodgerblue;
+}
+
+footer{
+    border-style: solid;
+    grid-area: footer;
+    background-color: lightgray;
+}
