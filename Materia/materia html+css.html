@@ -2085,7 +2085,7 @@ A tag dd é a descrição da tag <br>
 
     <img src="demo landing.png" style="height: 400px" alt="Landing Page Demo"> <br><br>
 
-    - A página tem o tamanho de 1268x1380 <br>
+    - A página tem o tamanho de 1268x80vh <br>
 
     - De seguida vamos criar o HTML necessário para criar a página. <br>
 
@@ -2100,11 +2100,63 @@ A tag dd é a descrição da tag <br>
     </code></pre>
 </p>
 
+<hr>    
+<hr>
+<h1>
+    Aula 41! - CRIAR FORMULÁRIOS!
+</h1>
+<hr>
+
+<p>
+    <strong style="color:#b32bce; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Formulários Simples</strong> <br>
+    - Os formulários HTML+CSS deverão de estar entre o tag form
+
+    <pre><code>
+        &lt;form> 
+
+        &lt;/form>
+    </code></pre>
+
+    - Dentro do form vamos colocar os vários inputs, escrevendo input e escolhendo da lista input:text <br>
+
+    - Colocando cada input dentro de um paragrafo 
+
+    <pre><code>
+        &lt;p> Nome: &lt;input type="text" name="nome" id="nome"> &lt;/p>
+        &lt;p> Sobrenome: &lt;input type="text" name="sobrenome" id="sobrenome"> &lt;/p>
+    </code></pre>
+
+    - Um formulárino necessita de um botão para submeter o conteúdo e para isso iremos utilizar input:submit <br>
+
+    <pre><code> &lt;p> &lt;input type="submit" value="Submeter"> &lt;/p></code></pre>
+
+    - Para tornar o formulário activo e enviar os dados para o PHP deveremos de utilizar o atributo action no form
+
+    <pre><code>
+        &lt;form action="formulario.php"> 
+
+        &lt;/form>
+    </code></pre>
+
+    - Além disso terá de fazer com que as palavras antes das caixas de input sejam labels relacionadas com o id da caixa
+
+    <pre><code>
+        &lt;p> &lt;label for="nome"> Nome: &lt;/label>
+                &lt;input type="text" name="nome" id="nome"> &lt;/p>
+        &lt;p> &lt;label for="sobrenome"> Sobrenome: &lt;/label>
+                &lt;input type="text" name="sobrenome" id="sobrenome"> &lt;/p>
+    </code></pre>
+
+    - Para testar a relação é carregar em cima do nome ou do sobrenome que ele irá activar a caixa respectiva <br>
+
+
+
+</p>
 
 <hr>    
 <hr>
 <h1>
-    Aula 41! - PROJECTO FINAL CSS GRID!
+    Aula 42! - PROJECTO FINAL CSS GRID!
 </h1>
 <hr>
 
@@ -2122,6 +2174,15 @@ A tag dd é a descrição da tag <br>
 
 
 </p>
+
+
+   
+
+
+
+
+</p>
+
 <hr>
 <hr>
 <hr>    
