@@ -9,16 +9,16 @@ body{
 
 .grid-container {
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 75px 4fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 50px 75px 4fr 150px;
     
     grid-template-areas: 
     "header header"
     "pub pub"
     "cont form"
     "footer footer";
-    max-width: 800px;
-    height:80vh;
+    max-width: 1268px;
+    height:90vh;
     margin: auto;
 }
 
