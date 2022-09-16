@@ -47,6 +47,15 @@ header{
     background-color: dodgerblue;
 }
 
+.frm {
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+    max-width:fit-content;
+    
+}
+
 footer{
     border-style: solid;
     grid-area: footer;
