@@ -17,6 +17,11 @@
     padding: 0px;
 }
 
+img {
+    width: 300px;
+    margin: auto;
+}
+
 body {
     background-color: var(--cor1);
     font-family: var(--fonte_base);
