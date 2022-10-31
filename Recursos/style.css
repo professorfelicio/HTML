@@ -104,3 +104,13 @@ footer p{
     font-size: small;
     color:white;
 }
+
+.imagem {
+    display: block;
+    position:relative;
+    margin-left: 30%;
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+
+}
