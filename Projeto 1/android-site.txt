@@ -60,4 +60,10 @@ Acesse aqui o site Android History para conhecer a sequência das versões "adoc
 
 Então é isto! Espero que tenhas gostado do artigo e desta curiosidade sobre o sistema Android e a sua simpática mascote.
          
-Site criado por O Teu Nome.
+Site criado por O Teu Nome (link de email).
+
+Fonts:
+Bebas Neue -> Google Fonts
+Android -> pasta fonts
+
+
