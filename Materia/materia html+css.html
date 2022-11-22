@@ -2113,6 +2113,20 @@ A tag dd é a descrição da tag <br>
 </h1>
 <hr>
 
+<p>- Formulário é uma página utilizada para pedir informação que será tratada por Uma
+    linguagem de programação.
+</p>
+
+<p> Os principais objectos utilizados numa formulário são os seguintes: </p>
+<ul>
+    <li>Caixa de texto</li>
+    <li>Label</li>
+    <li>Botões</li>
+    <li>Combo box</li>
+    <li>Radio button</li>
+    <li>Checkbox</li>
+</ul>
+
 <p>
     <strong style="color:#b32bce; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">Formulários Simples</strong> <br>
     - Os formulários HTML+CSS deverão de estar entre o tag form
@@ -2161,7 +2175,37 @@ melj
 <hr>    
 <hr>
 <h1>
-    Aula 42! - PROJECTO FINAL CSS GRID!
+    Aula 43! - FORMULÁRIOS!
+</h1>
+<hr>
+
+<p>Para utilizarmos uma caixa de palavra chave utilizamos o input type="password"</p>
+
+<pre><code>
+    &lt;p> &lt;label for="utilizador"> Utilizador: &lt;/label>
+            &lt;input type="text" name="util" id="utilizador"> &lt;/p>
+    &lt;p> &lt;label for="palavrachave"> Palavra-Chave: &lt;/label>
+            &lt;input type="password" name="palavrac" id="palavrachave"> &lt;/p>
+</code></pre>
+
+<p>Para criar um botão que irá limpar todos os dados do formulário utilizar input type="reset"</p>
+<pre><code> &lt;p> &lt;input type="reset" value="Limpar"> &lt;/p></code></pre>
+
+<p>Se um campo é requerido iremos utilizar o atributo required</p>
+<p>Se um campo precisa de ter um numero máximo de caracteres e um numero minimo de caracteres utilizar minlength e maxlength</p>
+<pre><code>
+    &lt;p> &lt;label for="utilizador"> Utilizador: &lt;/label>
+            &lt;input type="text" name="util" id="utilizador" required minlength="5" maxlength="15"> &lt;/p>
+    &lt;p> &lt;label for="palavrachave"> Palavra-Chave: &lt;/label>
+            &lt;input type="password" name="palavrac" id="palavrachave" required minlength="5" maxlength="15"> &lt;/p>
+</code></pre>
+
+<p>O tamanho da caixa é definida pelo atributo size=""</p>
+
+<hr>    
+<hr>
+<h1>
+    Aula 44! - PROJECTO FINAL CSS GRID!
 </h1>
 <hr>
 
@@ -2183,26 +2227,9 @@ melj
   
 </p>
 
-<hr>    
-<hr>
-<h1>
-    Aula 43! - FORMULÁRIOS!
-</h1>
-<hr>
 
-<p>- Formulário é uma página utilizada para pedir informação que será tratada por Uma
-    linguagem de programação.
-</p>
 
-<p> Os principais objectos utilizados numa formulário são os seguintes: </p>
-<ul>
-    <li>Caixa de texto</li>
-    <li>Label</li>
-    <li>Botões</li>
-    <li>Combo box</li>
-    <li>Radio button</li>
-    <li>Checkbox</li>
-</ul>
+
 <hr>
 
 <hr>
