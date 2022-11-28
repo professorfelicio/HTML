@@ -2202,6 +2202,22 @@ melj
 
 <p>O tamanho da caixa é definida pelo atributo size=""</p>
 
+
+<p>Para criar uma caixa de texto que apenas tenha numeros, utilizar type="number"</p>
+<pre><code>
+    &lt;input type="number" name="idade" id="idadel"> &lt;/p>
+</code></pre>
+
+<p> Para a caixa apenas aceitar numeros entre certos valores utilizar min e max</p>
+<pre><code>
+    &lt;input type="number" name="idade" id="idadel" min="1" max="99"> &lt;/p>
+</code></pre>
+
+<p>Para aceitar numeros decimais temos de utilizar o step com as décimas que irão ser aceites</p>
+
+<pre><code>
+    &lt;input type="number" name="idade" id="idadel" min="1" max="99" step="0.5" > &lt;/p> //aceita numeros decimais de 0,5 em 0,5
+</code></pre>
 <hr>    
 <hr>
 <h1>
