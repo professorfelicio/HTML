@@ -1835,6 +1835,128 @@ A tag dd é a descrição da tag <br>
     </code></pre>
     
 </p>
+
+<hr>    
+<hr>
+<h1>
+    Aula 37! - CSS Flexbox!
+</h1>
+<hr>
+<strong style="color:#c41857; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">O que é CSS Flexbox</strong> <br>
+<p>
+    - É uma forma de configurar a localização dos vários items de uma página, alinhando-os e distribuindo-os de uma forma dinamica. 
+</p>
+
+<p> - Para utilizar o Flexbox teremos de ter um contentor do tipo flexbox onde iremos colocar os items a serem distribuidos.</p>
+
+<h5>HTML</h5>
+
+<code><pre>
+    &lt;section class="fbcont"> Esta section é um container flexbox &lt;/section>
+</pre></code>
+
+<h5>CSS</h5>
+
+<code><pre>
+    .fbcont {
+    display: flex;
+    background-color: black;
+   }
+</pre></code>
+
+<p> - Teremos de ter items dentro do contentor, podemos utilizar asides ou articles</p>
+
+<h5>HTML</h5>
+
+<code><pre>
+    &lt;section class="fbcont"> 
+        &lt;aside class="fbitem"> Item 1 &lt;/aside>
+        &lt;aside class="fbitem"> Item 2 &lt;/aside>
+        &lt;aside class="fbitem"> Item 3 &lt;/aside>
+        &lt;aside class="fbitem"> Item 4 &lt;/aside>
+    &lt;/section>
+</pre></code>
+
+<p>-Temos de configurar os aside para serem mostrados</p>
+
+<h5>CSS</h5>
+<code><pre>
+.fbitem {
+        width:200px;
+        height:200px;
+        background-color: red;
+        border-style: solid;
+        border-color: yellow;
+    }
+</pre></code>
+
+<p>- A direcção do Flexbox é na horizontal (row) mas podemos modifica-la utilizando flex-direction:</p>
+<ul>
+    <li>row-reverse</li>
+    <li>column</li>
+    <li>column-reverse</li>
+</ul>
+
+<code><pre>
+    flex-direction:column;
+</pre></code>
+
+<p>- Se os items dentro de um contentor flexbox forem demasiados ou demasiado grandes eles são distorcidos para evitar isso utilizar a propriedade wrap.</p>
+
+<code><pre>
+    flex-wrap:wrap;
+</pre></code>
+
+<p>- Podemos configurar o tamanho dos items flexbox utilizando unidades sem formato, 
+    que irá preencher esses items de forma igual de acordo com o tamanho do contentor onde estão, distribuindo o espaço</p>
+
+    <code><pre>
+        flex:1; //A largura é 1 unidade
+    </pre></code>
+
+<p>- Podemos misturar este tipo de unidades com tamanhos em pixeis</p>
+
+<code><pre>
+    flex:1 200px; //A largura é 1 unidade e a altura é 200
+</pre></code>
+
+<p>- Podemos alinhar verticalmente os items dentro de um contentor de flexbox utilizando align-items:</p>
+<ul>
+    <li>stretch (por omissão)</li>
+    <li>center</li>
+    <li>flex-start</li>
+    <li>flex-end</li>
+</ul>
+
+<code><pre>
+    align-items: center;
+</pre></code>
+
+<p>- Podemos alinhar horizontalmente os items dentro de um contentor utilizando o justify-content:</p>
+<ul>
+    <li>flex-start (por omissão)</li>
+    <li>flex-end</li>
+    <li>center</li>
+    <li>space-around</li>
+    <li>space-between</li>
+</ul>
+<code><pre>
+    justify-content: space-around;
+</pre></code>
+
+<p>- Podemos criar espaços entre os items de uma flexbox utilizando o gap:</p>
+
+
+
+
+<p>- Items flexbox também podem ser Containers flexbox, bastando adicionar o display:flex; ao item</p>
+
+<code><pre>
+    gap:10px; //cria espaços todos à volta do objecto de 10 px
+    row-gap:10px; //cria espaços em cima e em baixo de 10px
+    column-gap:20px; //cria espaços à esquerda e direita de 20px
+</pre></code>
+
 <hr>    
 <hr>
 <h1>
@@ -2260,9 +2382,7 @@ melj
     <strong style="color:#2392ec; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic;">FUTURO CSS</strong> <br>
     - Pontos para aqueles que quiserem aprender mais HTML+CSS<br>
     <ul>
-        <li>CSS Flexbox</li>
         <li>CSS Animation</li>
-        <li>Imagens Paralax</li>
         <li>HTML+CSS para sistemas moveis</li>
         <li>Media Query</li>
         <li>SASS</li>

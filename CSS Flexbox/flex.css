@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: aquamarine;
+}
+.fbcont {
+    display: flex;
+    background-color: purple;
+    max-width: 800px;
+    max-height: 800px;
+    min-width: 300px;
+    margin:auto;
+    flex-wrap: wrap;
+    flex: 200px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+
+.fbitem {
+   width: 200px;
+   height: 200px;
+    background-color:orange;
+    border-style: solid;
+    border-color:white;
+}
+
