@@ -10,13 +10,13 @@ body{
     display: flex;
     background-color: purple;
     max-width: 800px;
-    max-height: 800px;
+
     min-width: 300px;
     margin:auto;
     flex-wrap: wrap;
     flex: 200px;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:baseline;
 }
 
 
@@ -26,5 +26,6 @@ body{
     background-color:orange;
     border-style: solid;
     border-color:white;
+    justify-self: ;
 }
 
