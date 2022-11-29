@@ -1951,7 +1951,8 @@ A tag dd é a descrição da tag <br>
     <li>flex-end //alinha no final do contentor</li>
     <li>center //alinha no centro</li>
     <li>space-between // alinha cada grupo o mais separado possivel</li>
-    <li>space-around</li>
+    <li>space-evenly //alinha cada grupo com espaços certos entre eles</li>
+    
 </ul>
 
 <p>- Podemos criar espaços entre os items de uma flexbox utilizando o gap:</p>
@@ -2027,22 +2028,7 @@ A tag dd é a descrição da tag <br>
 </pre></code>
 
 
-<p>- Podemos alinhar no eixo principal um certo item ou conjunto de itens de uma forma independente do align do contentor com justify-self</p>
-<p>- Também da mesma forma utiliza os valores do justify do contentor</p>
-
-<ul>
-    <li>flex-start (por omissão)</li>
-    <li>flex-end</li>
-    <li>center</li>
-    <li>space-around</li>
-    <li>space-between</li>
-</ul>
-
-<code><pre>
-    justify-self: flex-end;
-</pre></code>
-
-<p>- Da mesma forma podemos alinhar no eixo prependicular um certo item ou com align-self</p>
+<p>- Podemos alinhar  um certo item ou conjunto de itens de uma forma independente do align do contentor com align-self</p>
 <p>- O align self utiliza os mesmos valores que o align do contentor</p>
 <ul>
     <li>stretch (por omissão)</li>
@@ -2052,9 +2038,12 @@ A tag dd é a descrição da tag <br>
     <li>baseline //alinha segundo o conteudo dos elementos</li>
 </ul>
 
+
 <code><pre>
     align-self: flex-start;
 </pre></code>
+
+
 
 <p>- Items flexbox também podem ser Containers flexbox, bastando adicionar o display:flex; ao item</p>
 
