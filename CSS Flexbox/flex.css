@@ -4,10 +4,10 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: white;
 }
 .fbcont {
-    display: flex;
+    /*display: flex;*/
     background-color: purple;
     max-width: 800px;
 
@@ -21,11 +21,13 @@ body{
 
 
 .fbitem {
-   width: 200px;
-   height: 200px;
+   width: 150px;
+   height: 150px;
     background-color:orange;
     border-style: solid;
-    border-color:white;
-    justify-self: ;
+    border-color:lightblue;
+    border-radius: 10px;
+    text-align: center;
+    
 }
 
