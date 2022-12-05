@@ -29,12 +29,16 @@ gap:10px 10px;
 }
 
 section {
-    width: 150px;
-    height: 150px;
+    flex-basis: 200px;
     background-color:orange;
     border-style: solid;
     border-color:lightblue;
     border-radius: 10px;
     text-align: center;
+
+}
+
+.fbitem9 {
+    
 }
 
