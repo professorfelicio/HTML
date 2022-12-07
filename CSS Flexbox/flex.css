@@ -25,12 +25,18 @@ gap:10px 10px;
 }
 
 .fbitem {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:200px;
+}
 
+.fbi {
+    align-self:stretch;
+    height: auto;
 }
 
 section {
-    height: 150px;
-    width: 150px;
+    height: 200px;
     background-color:orange;
     border-style: solid;
     border-color:lightblue;
