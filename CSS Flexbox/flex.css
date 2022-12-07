@@ -29,7 +29,8 @@ gap:10px 10px;
 }
 
 section {
-    flex-basis: 200px;
+    height: 150px;
+    width: 150px;
     background-color:orange;
     border-style: solid;
     border-color:lightblue;
@@ -38,7 +39,4 @@ section {
 
 }
 
-.fbitem9 {
-    
-}
 

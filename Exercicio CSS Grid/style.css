@@ -10,11 +10,11 @@ body{
 .grid-container {
     display:grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 50px 75px 4fr 150px;
+    grid-template-rows: 100px 2fr 2fr 100px;
     
     grid-template-areas: 
     "header header"
-    "pub pub"
+    "cont pub2"
     "cont form"
     "footer footer";
     max-width: 1268px;
@@ -28,9 +28,16 @@ header{
     border-style: solid;
 }
 
-.pub {
+/* .pub {
     grid-area: pub;
     background-color: rgb(174, 212, 3);
+    border-style: solid;
+} */
+
+.pub2
+{
+    grid-area: pub2;
+    background-color: rgb(3, 212, 66);
     border-style: solid;
 }
 
@@ -44,7 +51,7 @@ header{
 .form {
     border-style: solid;
     grid-area: form;
-    background-color: dodgerblue;
+    background-color: rgb(252, 237, 181);
 }
 
 .frm {
