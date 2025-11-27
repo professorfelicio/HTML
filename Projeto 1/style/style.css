@@ -23,6 +23,26 @@
     padding: 0px;
 }
 
+nav>button {
+    background: none;
+    color: var(--cor0);
+    border: none;
+    font-size: 18px;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#pop {
+    background-color: var(--cor0);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
 
 body{
     background-color:var(--cor0);
