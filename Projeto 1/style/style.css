@@ -35,6 +35,12 @@ nav>button {
 
 }
 
+zemanel {
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 #pop {
     background-color: var(--cor0);
     width: fit-content;
